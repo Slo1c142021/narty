@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kalkulator</title>
+</head>
+<body>
+<h1>Kalkulator</h1>
+<form>
+<label>Liczba 1:</label>
+<input type="number" id="liczba1" name="liczba1"><br><br>
+<input type="button" value="sprawdź" onclick="dodaj()">
+<input type="reset" value="Resetuj">
+</form>
+<br><br>
+<label>Wynik:</label>
+<input type="number" id="wynik" name="wynik" readonly>
+<script>
+function dodaj() {
+var liczba1 = parseFloat(document.getElementById("liczba1").value);
+var wynik = liczba1 * 0,87;
+document.getElementById("wynik").value = wynik;
+}
+</script>
+</body>
